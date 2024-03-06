@@ -52,10 +52,11 @@ This application generates slugs from the given text input. It converts text int
 ## Folder Structure
 
 - `src/`: Contains the source code for the application.
-  - `components/`: Holds React components.
   - `pages/`: Contains page components.
   - `routes/`: Defines routing configurations.
   - `styles/`: Contains CSS files for styling.
+  
+- Other important files for the application.
   
 ## Dependencies
 
@@ -70,3 +71,6 @@ Contributions are welcome! Feel free to submit issues or pull requests.
 ## License
 
 This project is licensed under the MIT License.
+
+---
+Feel free to customize this README file according to your project's specific requirements and additional features. Happy coding.🚀
