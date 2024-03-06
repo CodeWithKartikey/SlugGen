@@ -27,21 +27,3 @@ dist-ssr
 *.njsproj
 *.sln
 
-# Ignore compiled JavaScript files
-*.js
-
-# Ignore compiled CSS files
-*.css
-
-# Ignore compiled TypeScript files
-*.ts
-
-# Ignore compiled HTML files
-*.html
-
-# Ignore compiled images
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.svg
