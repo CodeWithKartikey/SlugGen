@@ -1,4 +1,6 @@
-/* Styles for the slug container */
+/* 
+    Styles for the slug container 
+*/
 .slug {
     gap: 30px;
     width: 100%;
@@ -10,7 +12,9 @@
     background-color: white;
 }
 
-/* Styles for heading level 1 */
+/* 
+    Styles for heading level 1 
+*/
 h1 {
     color: black;
     font-size: 30px;
@@ -21,7 +25,9 @@ h1 {
     text-decoration: underline;
 }
 
-/* Styles for heading level 3 */
+/* 
+    Styles for heading level 3 
+*/
 h3 {
     color: black;
     font-size: 20px;
@@ -32,10 +38,13 @@ h3 {
     text-decoration: underline;
 }
 
-/* Styles for the main container */
+/* 
+    Styles for the main container 
+*/
 .slug-container {
     gap: 20px;
-    width: 50vw;
+    width: 80%;
+    max-width: 700px; /* Limit container width for smaller screens */
     height: auto;
     display: flex;
     flex-direction: column;
@@ -47,16 +56,20 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Styles for the input form within the container */
+/* 
+    Styles for the input form within the container 
+*/
 .slug-form-input {
     gap: 10px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-/* Styles for labels within the input form */
+/* 
+    Styles for labels within the input form 
+*/
 .slug-form-input label {
     color: black;
     font-size: 24px;
@@ -66,7 +79,9 @@ h3 {
     text-transform: capitalize;
 }
 
-/* Styles for text inputs within the input form */
+/* 
+    Styles for text inputs within the input form 
+*/
 .slug-form-input input[type="text"] {
     width: 100%;
     height: auto;
@@ -80,44 +95,29 @@ h3 {
     transition: border-color 0.3s ease-in-out;
 }
 
-/* Styles for focused text inputs */
+/* 
+    Styles for focused text inputs 
+*/
 input[type="text"]:focus{
     border-color: black;
 }
 
+/* 
+    Styles for the buttons container 
+*/
 .btn {
-    width: 75%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-/* Styles for the generate slug button */
-.input-btn {
-    width: 30%;
-    height: auto;
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: normal;
-    word-spacing: normal;
-    letter-spacing: normal;
-    border-radius: 2px;
-    border: 1px solid black;
-    color: white;
-    background-color: black;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Styles for hover effect on the generate slug button */
-.input-btn:hover {
-    color: black;
-    background-color: #B1AEAE;
-    border: 1px solid #B1AEAE;
-}
-
-/* Styles for the reset slug button */
+/* 
+    Styles for the generate slug button 
+*/
+.input-btn,
 .reset-btn {
-    width: 30%;
+    width: 45%;
     height: auto;
     padding: 10px 15px;
     font-size: 18px;
@@ -131,28 +131,37 @@ input[type="text"]:focus{
     transition: all 0.3s ease-in-out;
 }
 
-/* Styles for hover effect on the reset slug button */
+/* 
+    Styles for hover effect on the buttons 
+*/
+.input-btn:hover,
 .reset-btn:hover {
     color: black;
     background-color: #B1AEAE;
     border: 1px solid #B1AEAE;
 }
 
-/* Styles for the separator line */
+/* 
+    Styles for the separator line 
+*/
 .line {
-    width: 100vw;
+    width: 100%;
     border: 1px solid black;
 }
 
-/* Styles for the output container */
+/* 
+    Styles for the output container 
+*/
 .slug-form-output {
     gap: 10px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* Styles for labels within the output container */
+/* 
+    Styles for labels within the output container 
+*/
 .slug-form-output label {
     color: black;
     font-size: 20px;
@@ -162,12 +171,17 @@ input[type="text"]:focus{
     text-transform: capitalize;
 }
 
-/* Styles for the container of the output text input and copy button */
+/* 
+    Styles for the container of the output text input and copy button 
+*/
 .slug-form-output-container {
+    width: 100%;
     display: flex;
 }
 
-/* Styles for the output text input */
+/* 
+    Styles for the output text input 
+*/
 .slug-form-output-container input[type="text"] {
     width: 100%;
     height: auto;
@@ -181,14 +195,18 @@ input[type="text"]:focus{
     transition: border-color 0.3s ease-in-out;
 }
 
-/* Styles for focused output text input */
+/* 
+    Styles for focused output text input 
+*/
 .slug-form-output-container input[type="text"]:focus{
     border-color: black;
 }
 
-/* Styles for the copy button */
+/* 
+    Styles for the copy button 
+*/
 .output-btn {
-    width: 25%;
+    width: 120px; /* Adjust width as needed */
     height: auto;
     padding: 10px 15px;
     font-size: 18px;
@@ -202,9 +220,37 @@ input[type="text"]:focus{
     transition: all 0.3s ease-in-out;
 }
 
-/* Styles for hover effect on the copy button */
+/* 
+    Styles for hover effect on the copy button 
+*/
 .output-btn:hover {
     color: black;
     background-color: #B1AEAE;
     border: 1px solid #B1AEAE;
+}
+
+/* 
+    Media queries for responsiveness 
+*/
+@media screen and (max-width: 768px) {
+    /* For tablet screens */
+    .slug-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* For mobile screens */
+    .slug-container {
+        width: 95%;
+    }
+
+    .btn {
+        width: 80%;
+    }
+
+    .input-btn,
+    .reset-btn {
+        font-size: 14px;
+    }
 }
