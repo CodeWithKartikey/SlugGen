@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // Importing styles
-import '../styles/Error.css';
+import './Error.css';
 
 // Error component handles 404 errors and redirects to the home page
 const Error = () => {

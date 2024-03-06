@@ -2,7 +2,7 @@
 import React, { useState, useRef, useCallback } from 'react';
 
 // Importing styles
-import '../styles/Home.css';
+import './Home.css';
 
 // Define a functional component named Home
 const Home = () => {

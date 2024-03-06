@@ -3,8 +3,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // Importing page components
-import Home from '../pages/Home.jsx';
-import Error from '../pages/Error.jsx';
+import Home from '../pages/Home-Page/Home.jsx';
+import Error from '../pages/Error-Page/Error.jsx';
 
 // PageRouter component responsible for routing within the application
 const PageRouter = () => {

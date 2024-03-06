@@ -11,4 +11,8 @@ import './global.css';
 // Rendering the root component of the application
 // Wrapping the App component with React.StrictMode for additional checks
 // ReactDOM.createRoot is used for concurrent mode rendering
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
