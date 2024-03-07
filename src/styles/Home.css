@@ -113,7 +113,7 @@ input[type="text"]:focus{
 }
 
 /* 
-    Styles for the generate slug button 
+    Styles for the generate and reset slug button 
 */
 .input-btn,
 .reset-btn {

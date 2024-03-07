@@ -21,8 +21,12 @@ const Home = () => {
 
   // Function to generate a slug from the input text
   const generateSlug = () => {
-    const generatedSlug = slugify(text); 
-    setSlug(generatedSlug); 
+    if(text.length > 0) {
+      const generatedSlug = slugify(text); 
+      setSlug(generatedSlug); 
+    } else {
+      alert('Please enter a valid slug.');
+    }
   }
 
   // Function to reset a slug from the input text
