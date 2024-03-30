@@ -1,5 +1,5 @@
 /* 
-    Styles for the slug container 
+    Styles for the Slug section 
 */
 .slug {
     gap: 30px;
@@ -12,9 +12,6 @@
     background-color: white;
 }
 
-/* 
-    Styles for heading level 1 
-*/
 h1 {
     color: black;
     font-size: 30px;
@@ -25,9 +22,6 @@ h1 {
     text-decoration: underline;
 }
 
-/* 
-    Styles for heading level 3 
-*/
 h3 {
     color: black;
     font-size: 20px;
@@ -38,9 +32,6 @@ h3 {
     text-decoration: underline;
 }
 
-/* 
-    Styles for the main container 
-*/
 .slug-container {
     gap: 20px;
     width: 80%;
@@ -56,9 +47,6 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* 
-    Styles for the input form within the container 
-*/
 .slug-form-input {
     gap: 10px;
     width: 100%;
@@ -67,9 +55,6 @@ h3 {
     align-items: flex-start;
 }
 
-/* 
-    Styles for labels within the input form 
-*/
 .slug-form-input label {
     color: black;
     font-size: 24px;
@@ -79,9 +64,6 @@ h3 {
     text-transform: capitalize;
 }
 
-/* 
-    Styles for text inputs within the input form 
-*/
 .slug-form-input input[type="text"] {
     width: 100%;
     height: auto;
@@ -95,16 +77,10 @@ h3 {
     transition: border-color 0.3s ease-in-out;
 }
 
-/* 
-    Styles for focused text inputs 
-*/
 input[type="text"]:focus{
     border-color: black;
 }
 
-/* 
-    Styles for the buttons container 
-*/
 .btn {
     width: 70%;
     display: flex;
@@ -112,9 +88,6 @@ input[type="text"]:focus{
     justify-content: space-evenly;
 }
 
-/* 
-    Styles for the generate and reset slug button 
-*/
 .input-btn,
 .reset-btn {
     width: 45%;
@@ -131,9 +104,6 @@ input[type="text"]:focus{
     transition: all 0.3s ease-in-out;
 }
 
-/* 
-    Styles for hover effect on the buttons 
-*/
 .input-btn:hover,
 .reset-btn:hover {
     color: black;
@@ -141,17 +111,11 @@ input[type="text"]:focus{
     border: 1px solid #B1AEAE;
 }
 
-/* 
-    Styles for the separator line 
-*/
 .line {
     width: 100%;
     border: 1px solid black;
 }
 
-/* 
-    Styles for the output container 
-*/
 .slug-form-output {
     gap: 10px;
     width: 100%;
@@ -159,9 +123,6 @@ input[type="text"]:focus{
     flex-direction: column;
 }
 
-/* 
-    Styles for labels within the output container 
-*/
 .slug-form-output label {
     color: black;
     font-size: 24px;
@@ -171,17 +132,11 @@ input[type="text"]:focus{
     text-transform: capitalize;
 }
 
-/* 
-    Styles for the container of the output text input and copy button 
-*/
 .slug-form-output-container {
     width: 100%;
     display: flex;
 }
 
-/* 
-    Styles for the output text input 
-*/
 .slug-form-output-container input[type="text"] {
     width: 100%;
     height: auto;
@@ -195,16 +150,10 @@ input[type="text"]:focus{
     transition: border-color 0.3s ease-in-out;
 }
 
-/* 
-    Styles for focused output text input 
-*/
 .slug-form-output-container input[type="text"]:focus{
     border-color: black;
 }
 
-/* 
-    Styles for the copy button 
-*/
 .output-btn {
     width: 120px; /* Adjust width as needed */
     height: auto;
@@ -220,9 +169,6 @@ input[type="text"]:focus{
     transition: all 0.3s ease-in-out;
 }
 
-/* 
-    Styles for hover effect on the copy button 
-*/
 .output-btn:hover {
     color: black;
     background-color: #B1AEAE;

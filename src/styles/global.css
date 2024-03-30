@@ -10,9 +10,10 @@
 }
 
 /* 
-   Smooth scroll behavior for the entire document
+   Overflow-x & Smooth scroll behavior for the entire document
 */
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth; 
 }
 

@@ -2,75 +2,91 @@
 
 This application generates slugs from the given text input. It converts text into a slug format, which is commonly used for creating SEO-friendly URLs. The application is built using React and utilizes React Router for navigation.
 
-## How to Use
+## Usage
 
-1. **Installation**: 
-   - Ensure you have Node.js and npm installed on your system.
-   - Clone the repository to your local machine.
-
-2. **Setup**:
-   - Navigate to the project directory.
-   - Run `npm install` to install the dependencies.
-
-3. **Run the Application**:
-   - Execute `npm start` to start the development server.
-   - The application will be available at `http://localhost:3000` by default.
-
-4. **Usage**:
-   - Enter the desired text into the input field.
-   - Click on the "Generate Slug" button.
-   - The generated slug will be displayed in the output field.
-   - Click on the "Reset Slug" button.
-   - The input field will be reset to its original value which will be empty.
-   - Optionally, click on the "Copy" button to copy the slug to the clipboard.
-
-## Components
-
-### App Component
-- Responsible for rendering the application.
-- Uses React Router for navigation.
-
-### PageRouter Component
-- Handles routing within the application.
-- Routes to the Home page and handles undefined routes.
-
-### Home Component
-- Main component for generating slugs.
-- Provides an input field for entering text.
-- Generates a slug from the input text.
-- Allows copying the generated slug to the clipboard.
-
-### Error Component
-- Handles 404 errors.
-- Redirects to the home page after a specified duration.
+- Enter the desired text into the input field.
+- Click on the "Generate Slug" button.
+- The generated slug will be displayed in the output field.
+- Click on the "Reset Slug" button.
+- The input field will be reset to its original value which will be empty.
+- Optionally, click on the "Copy" button to copy the slug to the clipboard.
 
 ## Technologies Used
 
-- React: JavaScript library for building user interfaces.
-- React Router: Declarative routing for React applications.
+- **React with Vite**: The frontend of the application is built using React powered by Vite, a fast build tool that significantly improves the frontend development experience.
+- **React Router**: React Router handles client-side routing within the application, including a custom 404 page for unidentified routes.
 
-## Folder Structure
+## How to use
 
-- `src/`: Contains the source code for the application.
-  - `pages/`: Contains page components.
-  - `routes/`: Defines routing configurations.
-  - `styles/`: Contains CSS files for styling.
+To run this application locally, follow these steps:
 
-- Other important files and source code are included for the application.
-  
-## Dependencies
+1. Clone this repository to your local machine using the following command:
 
-- `react`: JavaScript library for building user interfaces.
-- `react-router-dom`: DOM bindings for React Router.
-- `react-scripts`: Scripts and configuration used by Create React App.
+```
+git clone https://github.com/CodeWithKartikey/StoreYourTask.git
+```
+
+2. Navigate to the project directory:
+
+```
+cd StoreYourTask
+```
+
+3. Install the dependencies using npm or yarn:
+
+```
+npm install
+```
+or
+```
+yarn install
+```
+
+4. Start the development server:
+
+```
+npm start
+```
+or
+```
+yarn start
+```
+
+5. Open your web browser and navigate to `http://localhost:3000` to view the application.
 
 ## Contributing
 
-Contributions are welcome! Feel free to submit issues or pull requests.
+Contributions are welcome. 😁
+
+If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository and create your branch:
+
+```
+git checkout -b feature/my-feature
+```
+
+2. Commit your changes:
+
+```
+git commit -am 'Add some feature'
+```
+
+3. Push to your branch:
+
+```
+git push origin feature/my-feature
+```
+
+4. Submit a pull request detailing your changes.
 
 ## License
 
 This project is licensed under the MIT License.
 
 ---
-Feel free to customize this README file according to your project's specific requirements and additional features. Happy coding.🚀
+
+Designed & Developed by CodeWithKartikey - Happy coding. 🚀
+
+---
+

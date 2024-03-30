@@ -1,5 +1,5 @@
 /* 
-    Styles for the error container 
+    Styles for the Page Not Found section
 */
 .error-container {
     gap: 30px;
@@ -12,9 +12,6 @@
     background-color: white;
 }
 
-/* 
-    Styles for the error text section 
-*/
 .error-text {
     gap: 5px;
     width: 100%;
@@ -24,9 +21,6 @@
     align-items: center;
 }
 
-/* 
-    Styles for heading level 1 in the error text 
-*/
 .error-text h1 {
     color: black;
     font-size: 30px;
@@ -36,9 +30,6 @@
     text-transform: capitalize;
 }
 
-/* 
-    Styles for heading level 2 in the error text 
-*/
 .error-text h2 {
     color: black;
     font-size: 20px;
@@ -48,9 +39,6 @@
     text-transform: capitalize;
 }
 
-/* 
-    Styles for the subtext in the error container 
-*/
 .error-subtext {
     color: black;
     font-size: 15px;

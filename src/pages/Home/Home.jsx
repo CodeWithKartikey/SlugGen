@@ -2,7 +2,7 @@
 import React, { useState, useRef, useCallback } from 'react';
 
 // Importing styles
-import '../styles/Home.css';
+import './Home.css';
 
 // Define a functional component named Home
 const Home = () => {
@@ -55,6 +55,9 @@ const Home = () => {
     window.navigator.clipboard.writeText(slug); // Copy the text to the clipboard
   }, [slug]); // Depend on the slug state
 
+  // Creating a variable to determine if the button should be disabled based on form inputs
+  const isButtonDisabled = (slugText.trim() !== '');
+
   // JSX for the component
   return (
     <>
@@ -75,8 +78,8 @@ const Home = () => {
             />
           </div>
           <div className='btn'>
-            <button className='input-btn' onClick={generateSlug}>Generate Slug</button>
-            <button className='reset-btn' onClick={resetSlug}>Reset Slug</button>
+            <button className='input-btn' onClick={generateSlug} disabled={!isButtonDisabled}>Generate Slug</button>
+            <button className='reset-btn' onClick={resetSlug} disabled={!isButtonDisabled}>Reset Slug</button>
           </div>
           
           <span className='line'></span>
@@ -105,7 +108,7 @@ const Home = () => {
             )
             :
             (
-              <h3>Please Generate Slug - No Data To Display</h3>
+              <h3>Please Generate Slug - No Data To Display. 😁</h3>
             )
           }
         </div>
@@ -114,5 +117,5 @@ const Home = () => {
   );
 }
 
-// Export the Home component as the default export
+// Export the Home component
 export default Home;

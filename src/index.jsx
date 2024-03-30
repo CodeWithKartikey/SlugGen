@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 
 // Importing styles
-import './global.css';
+import './styles/global.css';
 
 // Rendering the root component of the application
 // Wrapping the App component with React.StrictMode for additional checks
