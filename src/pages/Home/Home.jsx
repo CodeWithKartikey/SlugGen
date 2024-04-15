@@ -53,10 +53,10 @@ const Home = () => {
     slugRef.current?.select(); // Select the text in the generated slug input field
     slugRef.current?.setSelectionRange(0, 999); // Set the selection range for the text
     window.navigator.clipboard.writeText(slug); // Copy the text to the clipboard
-  }, [slug]); // Depend on the slug state
+  }, [slug, slugRef]); // Depend on the slug state
 
   // Creating a variable to determine if the button should be disabled based on form inputs
-  const isButtonDisabled = (slugText.trim() !== '');
+  const isButtonDisabled = (text.trim() !== '');
 
   // JSX for the component
   return (
@@ -65,7 +65,7 @@ const Home = () => {
         <h1>Slug-Generator</h1>
         <div className='slug-container'>
           <div className='slug-form-input'>
-            <label htmlFor="slugText">Slug :</label>
+            <label htmlFor='slugText'>Slug :</label>
             <input 
               type='text' 
               id='slugText' 
@@ -108,7 +108,7 @@ const Home = () => {
             )
             :
             (
-              <h3>Please Generate Slug - No Data To Display. 😁</h3>
+              <h3>Please Generate Slug - No Data To Display.</h3>
             )
           }
         </div>
